@@ -27,7 +27,6 @@ def random_data_generator():
         for i in range(1,params+1):
             form_data.append(float(data['v'+str(i)]))
             form_name.append(str(data['n'+str(i)]))
-        print form_data
         f=[]
         for k in form_data:
             f.append(float(k))

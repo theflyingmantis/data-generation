@@ -15,9 +15,6 @@ def names_generator():
 
 @app.route("/random_data_generator", methods=['GET','POST'])
 def random_data_generator():
-    #data = [0.1,0.4,0.45,0.05]
-    #number = 100
-    #print generate_data(data,number)
     if request.method=="POST":
         form_data = []
         form_name = []
@@ -27,7 +24,6 @@ def random_data_generator():
         for i in range(1,params+1):
             form_data.append(float(data['v'+str(i)]))
             form_name.append(str(data['n'+str(i)]))
-        print form_data
         f=[]
         for k in form_data:
             f.append(float(k))

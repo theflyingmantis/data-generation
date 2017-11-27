@@ -57,7 +57,7 @@ def download_names():
         names_csv +=str(name)+'\n'
     names_csv=names_csv[:-1]
     response = make_response(names_csv)
-    cd = 'attachment; filename=Names_IITJ.csv'
+    cd = 'attachment; filename=Names.csv'
     response.headers['Content-Disposition'] = cd 
     response.mimetype='text/csv'
     return response

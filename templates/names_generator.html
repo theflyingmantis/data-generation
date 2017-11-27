@@ -10,9 +10,8 @@
   <body background="{{ url_for('static', filename = 'images/bg-4-full.jpg') }}">
     <center>
       <font color="white"><h2>How many Names do you want?</h2></font><br>
-      <form method="POST" action="/download_names" name="number_of_names">
-         
-        <input type="number" name="number" id="number">
+      <form method="POST" action="/download_names" name="number_of_names">   
+        <input type="number" name="number" id="number" required>
         <input type="submit" value="Get Names">
       </form>
     </center>

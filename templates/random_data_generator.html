@@ -17,36 +17,38 @@
             Number of entries: <input type="number" name="number" id="number" required><br><br>
             <label for="n1">Name of field:</label><input type="text" name="n1" id="n1"
                                                                                placeholder="Eg: Strongly Agree/ Neutral" required>
-            <label for="v1">Probability of Field:</label><input type="number"
+            <label for="v1">Weight of Field:</label><input type="number"
                                                                 step="0.01" name="v1" id="v1" placeholder="Eg: 0.10" required>
           </form>
           <button onclick="add_field()">More Fields</button>
     </div>
-      <br><br>
-      <hr style="height:1px;border:none;color:#333;background-color:#333;" />
-      <center><h1>Instructions</h1></center>
+    <br><br>
+    <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+    <center><h1>Instructions</h1></center>
     <div class="row">
       <div class="col-sm-6" >
         <font size="4">Say our question is : "Would you want women as your boss at workplace ?"<br>
-        1. Strongly Agree<br>
-        2. Strongly Disagree<br>
-        3. Agree<br>
-        4. Disagree<br>
-        5. Neutral<br>
-        Now click <strong>More Fields button</strong> button 4 times (as we want 5
-        options) and add a
-        probabilistic value to each option. Enter the number of entries you want. <br>
-        And Press <strong>Get Data Button</strong>. Your randomly generated file in
-        order of probabilities with same mean would be downloaded!
+          1. Strongly Agree<br>
+          2. Strongly Disagree<br>
+          3. Agree<br>
+          4. Disagree<br>
+          5. Neutral<br>
+          Now click <strong>More Fields button</strong> button 4 times (as we want 5
+          options) and add a
+          weight to each option. Enter the number of entries you want. <br>
+          And Press <strong>Get Data Button</strong>. Your randomly generated file in
+          order of weights with same mean would be downloaded!<br>
+          <strong>Weights</strong> are normalised according to the values you
+          enter 
         </font>
       </div>
       <div class="col-sm-6" >
         <img src = "{{ url_for('static', filename = 'images/data_screenshot.png') }}">
         <h2>Screenshot of the question on the left. <br> Click <strong>
-          Get Data</strong> to download the csv</h2>
+            Get Data</strong> to download the csv</h2>
       </div>
     </div>
-    
+
   </body>
 </html>
 

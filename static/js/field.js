@@ -20,10 +20,10 @@ function add_field(){
 
   var lj = document.createElement("Label");
   lj.setAttribute("for","v"+fields.toString());
-  lj.innerHTML = "Probability of Field:"
+  lj.innerHTML = "Weight of Field:"
 
 
-    let f = document.getElementById('form_data');
+  let f = document.getElementById('form_data');
   var br = document.createElement("br");
   f.appendChild(br);
   f.appendChild(li);   

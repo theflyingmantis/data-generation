@@ -30,5 +30,12 @@ function add_field(){
   f.appendChild(i);
   f.appendChild(lj);     
   f.appendChild(j);
-  console.log(fields);
+}
+
+function delete_field(){
+  let f = document.getElementById('form_data');
+  l = f.childNodes.length;
+  for(let i=1;i<=5;i++){
+    f.removeChild(f.childNodes[l-i]);
+  }
 }
